@@ -8,20 +8,7 @@ public:
     Vector();
     ~Vector();
 
-    Vector(double &, double &, double &);
-
-    void setX(double);
-
-    void setY(double);
-
-    void setZ(double);
-
-    double getX();
-
-    double getY();
-
-    double getZ();
-
-    double multiply(int);
+    Vector(double &);
+    double multiply(const int &);
     void display();
 };

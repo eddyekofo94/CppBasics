@@ -1,8 +1,12 @@
 #include <iostream>
+#include "include/Vector.hpp"
 
 int main()
 {
-    std::cout << "Basic cpp" << '\n';
+    Vector v1;
+
+    v1.display();
+    // std::cout <<  << '\n';
 
     return 0;
 }
