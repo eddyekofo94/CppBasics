@@ -3,25 +3,16 @@
 class Vector
 {
     double x, y, z;
+    static int vectorCount;
 
 public:
     Vector();
     ~Vector();
 
-    Vector(double &, double &, double &);
-
-    void setX(double);
-
-    void setY(double);
-
-    void setZ(double);
-
-    double getX();
-
-    double getY();
-
-    double getZ();
-
-    double multiply(int);
+    Vector(double);
+    Vector(double, double, double);
+    double multiply(Vector &);
+    Vector sum(Vector &);
     void display();
+    static int getVectorCount();
 };
