@@ -7,6 +7,7 @@ include(CTest)
 enable_testing()
 
 add_subdirectory(Exercise1)
+add_subdirectory(Exercise17)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

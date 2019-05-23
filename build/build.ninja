@@ -479,11 +479,19 @@ build cmake_object_order_depends_target_Main: phony || Exercise1/CMakeFiles/Main
 build Exercise1/CMakeFiles/Main.dir/Main.cpp.o: CXX_COMPILER__Main ../Exercise1/Main.cpp || cmake_object_order_depends_target_Main
   DEP_FILE = Exercise1/CMakeFiles/Main.dir/Main.cpp.o.d
   FLAGS = -g
+  INCLUDES = -I../Exercise1/include
   OBJECT_DIR = Exercise1/CMakeFiles/Main.dir
   OBJECT_FILE_DIR = Exercise1/CMakeFiles/Main.dir
 build Exercise1/CMakeFiles/Main.dir/include/Vector.cpp.o: CXX_COMPILER__Main ../Exercise1/include/Vector.cpp || cmake_object_order_depends_target_Main
   DEP_FILE = Exercise1/CMakeFiles/Main.dir/include/Vector.cpp.o.d
   FLAGS = -g
+  INCLUDES = -I../Exercise1/include
+  OBJECT_DIR = Exercise1/CMakeFiles/Main.dir
+  OBJECT_FILE_DIR = Exercise1/CMakeFiles/Main.dir/include
+build Exercise1/CMakeFiles/Main.dir/include/int_stack.cpp.o: CXX_COMPILER__Main ../Exercise1/include/int_stack.cpp || cmake_object_order_depends_target_Main
+  DEP_FILE = Exercise1/CMakeFiles/Main.dir/include/int_stack.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I../Exercise1/include
   OBJECT_DIR = Exercise1/CMakeFiles/Main.dir
   OBJECT_FILE_DIR = Exercise1/CMakeFiles/Main.dir/include
 
@@ -494,7 +502,7 @@ build Exercise1/CMakeFiles/Main.dir/include/Vector.cpp.o: CXX_COMPILER__Main ../
 #############################################
 # Link the executable Exercise1/Main
 
-build Exercise1/Main: CXX_EXECUTABLE_LINKER__Main Exercise1/CMakeFiles/Main.dir/Main.cpp.o Exercise1/CMakeFiles/Main.dir/include/Vector.cpp.o
+build Exercise1/Main: CXX_EXECUTABLE_LINKER__Main Exercise1/CMakeFiles/Main.dir/Main.cpp.o Exercise1/CMakeFiles/Main.dir/include/Vector.cpp.o Exercise1/CMakeFiles/Main.dir/include/int_stack.cpp.o
   FLAGS = -g
   LINK_FLAGS = -L/usr/local/opt/icu4c/lib
   OBJECT_DIR = Exercise1/CMakeFiles/Main.dir
@@ -503,8 +511,129 @@ build Exercise1/Main: CXX_EXECUTABLE_LINKER__Main Exercise1/CMakeFiles/Main.dir/
   TARGET_FILE = Exercise1/Main
   TARGET_PDB = Main.dbg
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/eddyekofo/Coding/Languages/C++/CppBasics/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for test
+
+build Exercise17/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/eddyekofo/Coding/Languages/C++/CppBasics/build/Exercise17 && /usr/local/Cellar/cmake/3.14.2/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+build Exercise17/test: phony Exercise17/CMakeFiles/test.util
+
+#############################################
+# Utility command for package
+
+build Exercise17/CMakeFiles/package.util: CUSTOM_COMMAND Exercise17/all
+  COMMAND = cd /Users/eddyekofo/Coding/Languages/C++/CppBasics/build && /usr/local/Cellar/cmake/3.14.2/bin/cpack --config ./CPackConfig.cmake
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+build Exercise17/package: phony Exercise17/CMakeFiles/package.util
+
+#############################################
+# Utility command for edit_cache
+
+build Exercise17/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/eddyekofo/Coding/Languages/C++/CppBasics/build/Exercise17 && /usr/local/Cellar/cmake/3.14.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+build Exercise17/edit_cache: phony Exercise17/CMakeFiles/edit_cache.util
+
+#############################################
+# Utility command for rebuild_cache
+
+build Exercise17/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/eddyekofo/Coding/Languages/C++/CppBasics/build/Exercise17 && /usr/local/Cellar/cmake/3.14.2/bin/cmake -S/Users/eddyekofo/Coding/Languages/C++/CppBasics -B/Users/eddyekofo/Coding/Languages/C++/CppBasics/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+build Exercise17/rebuild_cache: phony Exercise17/CMakeFiles/rebuild_cache.util
+
+#############################################
+# Utility command for package_source
+
+build Exercise17/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/eddyekofo/Coding/Languages/C++/CppBasics/build && /usr/local/Cellar/cmake/3.14.2/bin/cpack --config ./CPackSourceConfig.cmake /Users/eddyekofo/Coding/Languages/C++/CppBasics/build/CPackSourceConfig.cmake
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+build Exercise17/package_source: phony Exercise17/CMakeFiles/package_source.util
+# =============================================================================
+# Object build statements for EXECUTABLE target Exercise17
+
+
+#############################################
+# Order-only phony target for Exercise17
+
+build cmake_object_order_depends_target_Exercise17: phony || Exercise17/CMakeFiles/Exercise17.dir
+build Exercise17/CMakeFiles/Exercise17.dir/Main.cpp.o: CXX_COMPILER__Exercise17 ../Exercise17/Main.cpp || cmake_object_order_depends_target_Exercise17
+  DEP_FILE = Exercise17/CMakeFiles/Exercise17.dir/Main.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I../Exercise17/include
+  OBJECT_DIR = Exercise17/CMakeFiles/Exercise17.dir
+  OBJECT_FILE_DIR = Exercise17/CMakeFiles/Exercise17.dir
+build Exercise17/CMakeFiles/Exercise17.dir/include/circle.cpp.o: CXX_COMPILER__Exercise17 ../Exercise17/include/circle.cpp || cmake_object_order_depends_target_Exercise17
+  DEP_FILE = Exercise17/CMakeFiles/Exercise17.dir/include/circle.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I../Exercise17/include
+  OBJECT_DIR = Exercise17/CMakeFiles/Exercise17.dir
+  OBJECT_FILE_DIR = Exercise17/CMakeFiles/Exercise17.dir/include
+build Exercise17/CMakeFiles/Exercise17.dir/include/polygon.cpp.o: CXX_COMPILER__Exercise17 ../Exercise17/include/polygon.cpp || cmake_object_order_depends_target_Exercise17
+  DEP_FILE = Exercise17/CMakeFiles/Exercise17.dir/include/polygon.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I../Exercise17/include
+  OBJECT_DIR = Exercise17/CMakeFiles/Exercise17.dir
+  OBJECT_FILE_DIR = Exercise17/CMakeFiles/Exercise17.dir/include
+build Exercise17/CMakeFiles/Exercise17.dir/include/quadrilateral.cpp.o: CXX_COMPILER__Exercise17 ../Exercise17/include/quadrilateral.cpp || cmake_object_order_depends_target_Exercise17
+  DEP_FILE = Exercise17/CMakeFiles/Exercise17.dir/include/quadrilateral.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I../Exercise17/include
+  OBJECT_DIR = Exercise17/CMakeFiles/Exercise17.dir
+  OBJECT_FILE_DIR = Exercise17/CMakeFiles/Exercise17.dir/include
+build Exercise17/CMakeFiles/Exercise17.dir/include/rectangle.cpp.o: CXX_COMPILER__Exercise17 ../Exercise17/include/rectangle.cpp || cmake_object_order_depends_target_Exercise17
+  DEP_FILE = Exercise17/CMakeFiles/Exercise17.dir/include/rectangle.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I../Exercise17/include
+  OBJECT_DIR = Exercise17/CMakeFiles/Exercise17.dir
+  OBJECT_FILE_DIR = Exercise17/CMakeFiles/Exercise17.dir/include
+build Exercise17/CMakeFiles/Exercise17.dir/include/square.cpp.o: CXX_COMPILER__Exercise17 ../Exercise17/include/square.cpp || cmake_object_order_depends_target_Exercise17
+  DEP_FILE = Exercise17/CMakeFiles/Exercise17.dir/include/square.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I../Exercise17/include
+  OBJECT_DIR = Exercise17/CMakeFiles/Exercise17.dir
+  OBJECT_FILE_DIR = Exercise17/CMakeFiles/Exercise17.dir/include
+build Exercise17/CMakeFiles/Exercise17.dir/include/triangle.cpp.o: CXX_COMPILER__Exercise17 ../Exercise17/include/triangle.cpp || cmake_object_order_depends_target_Exercise17
+  DEP_FILE = Exercise17/CMakeFiles/Exercise17.dir/include/triangle.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I../Exercise17/include
+  OBJECT_DIR = Exercise17/CMakeFiles/Exercise17.dir
+  OBJECT_FILE_DIR = Exercise17/CMakeFiles/Exercise17.dir/include
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Exercise17
+
+
+#############################################
+# Link the executable Exercise17/Exercise17
+
+build Exercise17/Exercise17: CXX_EXECUTABLE_LINKER__Exercise17 Exercise17/CMakeFiles/Exercise17.dir/Main.cpp.o Exercise17/CMakeFiles/Exercise17.dir/include/circle.cpp.o Exercise17/CMakeFiles/Exercise17.dir/include/polygon.cpp.o Exercise17/CMakeFiles/Exercise17.dir/include/quadrilateral.cpp.o Exercise17/CMakeFiles/Exercise17.dir/include/rectangle.cpp.o Exercise17/CMakeFiles/Exercise17.dir/include/square.cpp.o Exercise17/CMakeFiles/Exercise17.dir/include/triangle.cpp.o
+  FLAGS = -g
+  LINK_FLAGS = -L/usr/local/opt/icu4c/lib
+  OBJECT_DIR = Exercise17/CMakeFiles/Exercise17.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Exercise17/Exercise17
+  TARGET_PDB = Exercise17.dbg
+# =============================================================================
 # Target aliases.
 
+build Exercise17: phony Exercise17/Exercise17
 build Main: phony Exercise1/Main
 # =============================================================================
 # Folder targets.
@@ -517,13 +646,19 @@ build Main: phony Exercise1/Main
 
 build  Exercise1/all: phony Main
 # =============================================================================
+
+#############################################
+# Folder: /Users/eddyekofo/Coding/Languages/C++/CppBasics/build/Exercise17
+
+build  Exercise17/all: phony Exercise17
+# =============================================================================
 # Built-in targets
 
 
 #############################################
 # The main all target.
 
-build all: phony Exercise1/Main
+build all: phony Exercise1/Main Exercise17/Exercise17
 
 #############################################
 # Make the all target the default.
@@ -533,13 +668,13 @@ default all
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../Exercise1/CMakeLists.txt /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CPack.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CPackComponent.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CTest.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CTestTargets.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CTestUseLaunchers.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/DartConfiguration.tcl.in /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/UnixPaths.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.14.2/CMakeCCompiler.cmake CMakeFiles/3.14.2/CMakeCXXCompiler.cmake CMakeFiles/3.14.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../Exercise1/CMakeLists.txt ../Exercise17/CMakeLists.txt /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CPack.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CPackComponent.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CTest.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CTestTargets.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CTestUseLaunchers.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/DartConfiguration.tcl.in /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/UnixPaths.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.14.2/CMakeCCompiler.cmake CMakeFiles/3.14.2/CMakeCXXCompiler.cmake CMakeFiles/3.14.2/CMakeSystem.cmake
   pool = console
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../Exercise1/CMakeLists.txt /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CPack.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CPackComponent.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CTest.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CTestTargets.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CTestUseLaunchers.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/DartConfiguration.tcl.in /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/UnixPaths.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.14.2/CMakeCCompiler.cmake CMakeFiles/3.14.2/CMakeCXXCompiler.cmake CMakeFiles/3.14.2/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../Exercise1/CMakeLists.txt ../Exercise17/CMakeLists.txt /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CPack.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CPackComponent.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CTest.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CTestTargets.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/CTestUseLaunchers.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/DartConfiguration.tcl.in /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Modules/Platform/UnixPaths.cmake /usr/local/Cellar/cmake/3.14.2/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.14.2/CMakeCCompiler.cmake CMakeFiles/3.14.2/CMakeCXXCompiler.cmake CMakeFiles/3.14.2/CMakeSystem.cmake: phony
 
 #############################################
 # Clean all the built files.
